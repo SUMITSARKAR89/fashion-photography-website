@@ -4,6 +4,9 @@
         justify-content: space-between;
         padding: 2%;
     }
+    .logo img{
+        margin-left: 20px;
+    }
     #menu{
         display: block;
         transition: 0.5s ease-in-out;
@@ -12,17 +15,16 @@
         transform: scale(1.1);
     }
     #open-btn{
-        background-color: aliceblue;
         padding: 10px;
         border-radius: 50%;
         cursor: pointer;
         position: absolute;
         margin-top: -20px;
-       margin-left: -40px;
+       margin-left: -60px;
        overflow: hidden;
     }
     #close-btn{
-        background-color: #ffffffbd;
+        margin-top: 10px;
         padding: 5px;
         border-radius: 50%;
         cursor: pointer;
@@ -33,14 +35,16 @@
         background-color: black;
         box-shadow: none;
     }
-    #close-btn i:hover{
+    #close-btn i:hover, #open-btn i:hover{
         color: #fff;
+        transform:  scale(1.1);
         
     }
     #open-btn i, #close-btn i{
-        color: black;
+        color: rgba(245, 242, 242, 0.842);
         width: 20px;
         height: 20px;
+        font-size: 30px;
     }
     #nav{
         display: none;
@@ -50,7 +54,7 @@
         flex-direction: column;
         position: absolute;
         background-color: #000000c0;
-        top: 0;
+        top: -100%;
         left: 0;
         right: 0;
         padding: 20px;
@@ -60,6 +64,7 @@
         backdrop-filter: blur(10px);
         overflow: hidden;
         z-index: 1;
+        transition: 0.s;
         
     }
     #mobile-nav-logo{
@@ -86,6 +91,8 @@
         left: 20vh;
         background-color: rgba(94, 98, 104, 0.192);
         animation: square 5s linear infinite;
+        background:center  url(image/3\ \(1\).png);
+
     }
 
     .animeone li:nth-child(2){
@@ -125,7 +132,7 @@
     }
     .animetwo ul li{
         position: absolute;
-        border: 1px solid rgba(9, 17, 3, 0.137);
+        border: 1px solid rgba(95, 182, 28, 0.137);
         width: 50px;
         height: 50px;
         border-radius: 50%;
@@ -140,7 +147,7 @@
     }
     .animetwo li:nth-child(2){
         bottom: 0;
-        left: 40vh;
+        left: 30vh;
        animation-delay: 2s;
        
        
@@ -148,11 +155,10 @@
     }
     .animetwo li:nth-child(3){
         bottom: 0;
-        left: 60vh;
+        left: 80vh;
         background-color: rgba(7, 18, 36, 0.062);
         animation-delay: 0s;
-        background:center  url(image/3\ \(1\).png);
-
+        
         
     }
     .animetwo li:nth-child(4){
@@ -170,7 +176,8 @@
             bottom: 0;
         }
         100%{
-            transform: scale(7);
+            transform: scale(3
+            );
             opacity: 0;
             bottom: 50vh;
         }
@@ -199,7 +206,7 @@
         margin-top: 25px;
         height: 2px;
         background-color: var( ---underline-text-color);
-        transition: 0.3s ease-in-out;
+        transition: 0.2s ease-in-out;
     }
     #nav-link a:hover::after{
         width: 10%;
