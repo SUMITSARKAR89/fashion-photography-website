@@ -203,7 +203,9 @@
         content: '';
         width: 2px;
         text-align: center;
-        margin-top: 25px;
+        margin: 0 auto;
+        margin-top: 26px;
+        margin-left: 0px;
         height: 2px;
         background-color: var( ---underline-text-color);
         transition: 0.2s ease-in-out;

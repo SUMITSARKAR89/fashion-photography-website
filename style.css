@@ -137,11 +137,24 @@ header{
     font-size: var(---font-text-16);
     font-weight: 400;
     transition: 0.4s ease-in-out;
+    position: relative;
     
 }
-#nav a:hover{
+#nav a::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    margin: 0 auto;
+    top: 26px;
+    left: 25px;
+    background-color: rgb(241, 241, 241);
+    transition: 0.3s ease-in-out;
+}
+ #nav a:hover::after{
     color:#fff;
     font-weight: 500;
+    width: 20%;
    
 }
 #mobile-nav{
@@ -169,6 +182,95 @@ header{
     position: absolute;
     font-size: var(--font-h1-40);
 }
+/* ------animation----  */
+.anime-background ul li{
+    position: absolute;
+   
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.anime-background li{
+    bottom:1vh ;
+    left: 2vh;
+    background-color: rgba(16, 214, 214, 0.164);
+    animation: cercle 15s linear infinite;
+}
+.anime-background li:nth-child(2){
+    bottom:10vh ;
+    left: 20vh;
+    background-color: rgba(0, 255, 255, 0.075);
+    animation-delay: 0s;
+
+}
+.anime-background li:nth-child(3){
+    bottom:1vh ;
+    left: 40vh;
+    background-color: rgba(20, 26, 26, 0.068);
+    animation-delay: 5s;
+}
+.anime-background li:nth-child(4){
+    bottom:10vh ;
+    left: 60vh;
+    background-color: rgba(0, 255, 255, 0.075);
+    animation-delay: 8s;
+}
+.anime-background li:nth-child(5){
+    bottom:1vh ;
+    left: 80vh;
+    background-color: rgba(20, 26, 26, 0.068);
+    animation-delay: 4s;
+}
+.anime-background li:nth-child(6){
+    bottom:10vh ;
+    left: 100vh;
+    background-color: rgba(0, 255, 255, 0.075);
+    animation-delay: 10s;
+}
+.anime-background li:nth-child(7){
+    bottom:1vh ;
+    left: 120vh;
+    background-color: rgba(20, 26, 26, 0.068);
+    animation-delay: 12s;
+}
+.anime-background li:nth-child(8){
+    bottom:10vh ;
+    left: 140vh;
+    background-color: rgba(0, 255, 255, 0.075);
+    animation-delay: 0s;
+}
+.anime-background li:nth-child(9){
+    bottom:1vh ;
+    left: 160vh;
+    background-color: rgba(20, 26, 26, 0.068);
+    animation-delay: 8s;
+}
+.anime-background li:nth-child(10){
+    bottom:10vh ;
+    left: 180vh;
+    background-color: rgba(0, 255, 255, 0.075);
+    animation-delay: 4s;
+}
+.anime-background li:nth-child(11){
+    bottom:1vh ;
+    left: 200vh;
+    background-color: rgba(20, 26, 26, 0.068);
+}
+@keyframes  cercle {
+    0%{
+        transform: scale(0) ;
+        opacity: 1;
+        
+
+    }
+    100%{
+        transform: scale(3) ;
+        opacity: 0;
+        bottom: 100vh;
+
+    }
+    
+}
 /* ================================subject==================================  */
 #subject-container{
     display: grid;
@@ -180,7 +282,11 @@ header{
 #subject-container .subject-card{
     padding: 2%;
     max-width: 100%;
+    transition: 0.5s ease;
     
+}
+.subject-card:hover{
+    transform: scale(1.1) translateY(15px);
 }
 .subject-card img{
     width: 400px;
@@ -200,8 +306,9 @@ header{
 .subject-card a{
     display: block;
     position: absolute;
-    margin-top: -35px;
-    margin-left: 65px;
+    margin: 0 auto;
+    margin-top: -50px;
+    margin-left: 50px;
     cursor: pointer;
     font-size: var(--font-15);
     font-weight: 600;
@@ -211,6 +318,7 @@ header{
     transition: 0.3s;
     
 }
+
 .subject-card a:hover{
     color: #fff;
     opacity: 1;
@@ -225,7 +333,7 @@ header{
 #hero-container{
     background-image: url(image/about.jpg);
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     position: absolute;
     background: linear-gradient(to bottom, rgba(0, 9, 15, 0) 50%, rgba(0, 1, 2, 0.473) 70%, rgba(8, 8, 8, 0.959) 100%) , url(image/about.jpg) center center fixed no-repeat;  
     display: flex;
@@ -237,10 +345,10 @@ header{
 .hero-container-card{
     padding: 2%;
     position: relative;
-    margin-top: 140px;
+    margin-top: 120px;
 }
 .hero-container-card:nth-child(2){
-    width: 70%;
+    width: 80%;
 }
 .social-icon{
     display: flex;
@@ -271,6 +379,7 @@ header{
     opacity: 0.8;
 }
 button{
+    display: block;
     background-color: transparent;
     border: none;
     outline: none;
@@ -279,17 +388,238 @@ button{
     font-weight: 600;
     color: var(---underline-text-color);
     text-transform: uppercase;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+button:hover{
+    opacity: 1;
 }
 button::before{
     position: absolute;
     content: '';
-    width: 22%;
+    width: 14%;
     height: 2px;
+    display: block;
     margin-top: 30px;
-    margin-left: 0px;
     background-color: var(---underline-text-color);
 }
 .btn{
     cursor: pointer;
 }
+/* -------------------------------------  */
+#portfolio{
+    margin-top: 800px;
+    height: auto;
+    width: 100%;
+    
+}
+.portfolio-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.portfolio-header h2{
+    text-transform: uppercase;
+    font-size: var(---font-h2-32);
+}
+.portfolio-img-card{
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+}
+.portfolio-img-card img{
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: 0.3s;
+}
+.portfolio-img-card img:hover{
+    opacity: 0.6;
+    transform: scale(1.02);
+}
+/* ----------------------------  */
+#service{
+    max-width: 100%;
+    margin: 0 auto; 
+}
+.service-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    width: 100%;
+    margin-top: 45px;
+}
+#service h2{
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 80px;
+    font-size: var(---font-h2-32);
+    font-weight: 600;
+    color: #fff;
+}
+.service-card{
+    display: flex;
+    flex-direction: column;
+    margin: 2% ;
+    padding: 2.5%;
+}
+.service-card .service-card-content{
+    display: flex;
+    flex-direction: column;
+    margin: 8% 0;
+    gap: 20px;
+}
+.service-card-content h3{
+    text-transform: capitalize;
+    font-size: var(---font-h3-26);
+    font-weight: 700;
+    color: var(---underline-text-color);
+}
+.service-card-content p{
+    font-size: var(---font-text-16);
+    font-weight: 400;
+    color: var(---text-color);
+    opacity: 0.7;
+    line-height: 25px;
+}
+.service-card .ex-btn{
+    display: block;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: var(---font-13);
+    font-weight: 700;
+    opacity: 0.8;
+    color: #fff;
+    font-family: var(---font-family);
+    transition: 0.3s ease-in-out;
+}
+.ex-btn::before{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 2px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: var(---underline-text-color);
+    transition: 0.3s;
+}
+.ex-btn:hover::before{
+    width: 5%;
+    opacity: 1;
+    
+}
+/* -------------------------  */
+#comment i{
+    font-size: var(--font-h1-40);
+    padding-left: 22px;
+}
+.comment-quota{
+    width: 98%;
+    margin-left: 70px;
+    padding: 0 20px;
+}
+.comment-quota p{
+    font-size: var(---font-h3-26);
+    margin-bottom: 25px;
+    font-weight: 500;
+    color: var(---underline-text-color);
 
+}
+.comment-content{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 3px;
+
+}
+.comment-content img{
+    width:70px ;
+    height: 70px;
+}
+.comment-content-text{
+    text-align: left;
+    text-transform: capitalize;
+}
+ .comment-content-text h5{
+    font-size: var(--font-15);
+    font-weight: 500;
+    margin-bottom: 6px;
+    color: #fff;
+}
+.comment-content-text h6{
+    font-size: var(---font-13);
+    font-weight: 400;
+    color: var(---underline-text-color);
+}
+/* -----------------------------  */
+#work{
+    background: linear-gradient(to bottom,#050505af, rgba(0,0,0,02) ) , url(image/cta.png) center  no-repeat; 
+    background-size: cover;
+    height: 60vh;
+    margin-bottom: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    margin:  0 auto;
+}
+#work h2{
+    font-size: var(---font-h2-32);
+    font-weight: 700;
+    color: var(---underline-text-color);
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+#foot{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin:  0 auto;
+    max-width: 100%;
+    
+}
+.footer-logo img{
+    width: 200px;
+    margin-top: 20px;
+}
+.foot-social{
+    margin: 2% 0;
+}
+.foot-social a{
+    display: inline-block;
+    margin: 0 5px;
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: var(---font-13);
+    color: var(---text-color);
+    font-weight: 600;
+    cursor: pointer;
+    opacity: 1;
+    transition: 0.5s;
+}
+.foot-social a:hover{
+    opacity: 0.7;
+}
+#foot p{
+    color:var(---underline-text-color);
+    font-size: var(---font-13);
+    font-weight: 400;
+    margin-top: 20px;
+    text-align: center;
+    text-transform: capitalize;
+}
+/* =========================================================================================  */
