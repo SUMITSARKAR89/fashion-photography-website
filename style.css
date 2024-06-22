@@ -198,62 +198,62 @@ header{
 }
 .anime-background li:nth-child(2){
     bottom:10vh ;
-    left: 20vh;
+    left: 10vh;
     background-color: rgba(0, 255, 255, 0.075);
     animation-delay: 0s;
 
 }
 .anime-background li:nth-child(3){
     bottom:1vh ;
-    left: 40vh;
+    left: 20vh;
     background-color: rgba(20, 26, 26, 0.068);
     animation-delay: 5s;
 }
 .anime-background li:nth-child(4){
     bottom:10vh ;
-    left: 60vh;
+    left: 30vh;
     background-color: rgba(0, 255, 255, 0.075);
     animation-delay: 8s;
 }
 .anime-background li:nth-child(5){
     bottom:1vh ;
-    left: 80vh;
+    left: 40vh;
     background-color: rgba(20, 26, 26, 0.068);
     animation-delay: 4s;
 }
 .anime-background li:nth-child(6){
     bottom:10vh ;
-    left: 100vh;
+    left: 50vh;
     background-color: rgba(0, 255, 255, 0.075);
     animation-delay: 10s;
 }
 .anime-background li:nth-child(7){
     bottom:1vh ;
-    left: 120vh;
+    left: 60vh;
     background-color: rgba(20, 26, 26, 0.068);
     animation-delay: 12s;
 }
 .anime-background li:nth-child(8){
     bottom:10vh ;
-    left: 140vh;
+    left: 70vh;
     background-color: rgba(0, 255, 255, 0.075);
     animation-delay: 0s;
 }
 .anime-background li:nth-child(9){
     bottom:1vh ;
-    left: 160vh;
+    left: 80vh;
     background-color: rgba(20, 26, 26, 0.068);
     animation-delay: 8s;
 }
 .anime-background li:nth-child(10){
     bottom:10vh ;
-    left: 180vh;
+    left: 90vh;
     background-color: rgba(0, 255, 255, 0.075);
     animation-delay: 4s;
 }
 .anime-background li:nth-child(11){
     bottom:1vh ;
-    left: 200vh;
+    left: 5vh;
     background-color: rgba(20, 26, 26, 0.068);
 }
 @keyframes  cercle {
@@ -623,3 +623,218 @@ button::before{
     text-transform: capitalize;
 }
 /* =========================================================================================  */
+/* ====================#aboutHtml=====================  */
+
+#aboutHtml h1{
+    text-align: center;
+    font-size: var(--font-h1-40);
+    font-weight: 700;
+    color: var(---text-color);
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+.aboutHtml-container{
+    margin: 10% 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    height: auto;
+}
+.aboutHtml-container img{
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+.aboutHtml-container-card{
+    padding-left: 30px;
+}
+.aboutHtml-container-card h2{
+    font-size: var(---font-h2-32);
+    color: var(---text-color);
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.aboutHtml-container-card p{
+    font-size: var(--font-15);
+    font-weight: 500;
+    line-height: 25px;
+    color: var(---text-color);
+    opacity: 0.8;
+    width: 450px;
+    margin-bottom: 38px;
+    
+}
+/* -------------------------------  */
+ .gray{
+    background-color: #111112;
+    padding: 45px;
+    margin: 4% 0 ;
+    
+}
+.award-feature-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    text-transform: capitalize;
+}
+.award-feature-card{
+    width: 100%;
+    padding: 5px;
+
+}
+.award-feature-card h3{
+    font-size: var(---font-h3-26);
+    font-weight: 600;
+    color: var(---text-color);
+    margin-bottom: 35px;
+    
+}
+.award-content{
+    margin: 4% 0;
+    padding: 2% 2px;
+}
+.award-content h6{
+    font-size: var(---font-text-16);
+    font-weight: 600;
+    color: var(---text-color);
+    line-height: 20px;
+}
+.award-content p{
+    font-size: var(---font-13);
+    color: var(---underline-text-color);
+    font-weight: 400;
+    opacity: 0.8;
+    line-height: 25px;
+}
+/* -----------------------------------  */
+.work-experience-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 auto;
+    gap: 30px;
+    width: 100%;
+}
+.work-container-card{
+    width: 100%;
+   
+}
+.work-container-card h2{
+    font-size: var(---font-h2-32);
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 35px;
+    color: var(---text-color);
+}
+.work-container-card  p{
+    font-size: var(---font-text-16);
+    font-weight: 400;
+    color: var(---text-color);
+    opacity: 0.7;
+    line-height: 25px;
+    margin-top: 10px;
+    width: 95%;
+
+}
+.work-container-card h3{
+    font-size: var(---font-h4-24);
+    font-weight: 500;
+    text-transform: capitalize;
+    color: var(---text-color);
+    margin-bottom: 15px;
+    
+    
+}
+.gray-flex{
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   padding-bottom: 20px;
+   border-bottom: 1px solid #fff;
+   
+}
+.gray-flex p{
+    font-size: var(---font-13);
+    font-weight: 400;
+    color: var(---underline-text-color);
+    opacity: 0.7;
+    margin-top: -5px;
+    
+}
+/* ============================portfolio HTML ========================  */
+
+#portfolioHtml{
+    width: 100%;
+    margin: 0 auto;
+}
+.portfolio-Html-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 35px;
+    width: 100%;
+    margin:  0 auto;
+}
+.portfolio-Html-head h1{
+    font-size: var(--font-h1-40);
+    color: var(---text-color);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.portfolio-Html-head p{
+    width: 50%;
+    font-size: var(--font-15);
+    color: var(---text-color);
+    font-weight: 400;
+    opacity: 0.7;
+
+}
+#portfolioHtml-image{
+    width: 100%;
+    margin:  0 auto;
+    text-align: center;
+}
+.portfolio-link{
+    margin-bottom: 30px;
+}
+.portfolio-link a{
+
+    display: inline-block;
+    padding:  5px;
+    margin:0 1% ;
+    text-transform: uppercase;
+    font-size: var(---font-13);
+    font-weight: 600;
+    font-family: var(---font-family);
+    color: var(---underline-text-color);
+    cursor: pointer;
+    opacity: 1;
+    transition: 0.3s ease;
+}
+.portfolio-link a:hover, a.active{
+    opacity: 0.6;
+}
+.portfolio-all-image{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    
+}
+.portfolio-all-image img{
+    opacity: 1;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.portfolio-all-image img:hover{
+    opacity: 0.7;
+    transform: scale(1.02);
+    border-radius: 5px;
+}
