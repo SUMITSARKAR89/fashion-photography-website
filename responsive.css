@@ -1,4 +1,52 @@
-@media(max-width:780px){
+@media(max-width:1400px){
+    .container{
+        padding: 3% 6%;
+    }
+}
+@media(max-width:1120px){
+    .container{
+        padding: 2% 3%;
+    }
+    #subject-container, 
+    .award-feature-container,
+    .service-body-container
+    {
+        
+        grid-template-columns: repeat(2, 1fr);
+       
+    }
+    .contactHtml-container
+    {
+        grid-template-columns: 1fr;
+       
+    }
+    .faq-container{
+        flex-direction: column;
+        height: auto;
+        gap: 0;
+    }
+    .portfolio-all-image,
+    .portfolio-img-card{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media(max-width:920px){
+    :root{
+        --font-h1-40: 36px;
+    ---font-h2-32:30px;
+    ---font-h3-26:24px;
+    ---font-h4-24:22px;
+    ---font-h5-20:18px;
+    --font-15: 14px;
+    ---font-13:13px;
+    ---font-text-16: 15px;  
+    }
+    .comment-quota{
+        width: 90%;
+        margin-left: 20px;
+        padding: 0 20px;
+    }
     .logo{
         display: flex;
         justify-content: space-between;
@@ -213,4 +261,142 @@
     #nav-link a:hover::after{
         width: 10%;
     }
+    .service-container{
+        grid-template-columns: 1fr;
+        margin-top: 20px;
+        text-align: center;
+        gap: 15px;
+        justify-content: center;
+    }
+    .service-card .service-card-content{
+        margin: 3% 0;
+        padding: 2%;
+        border: 1px solid rgba(179, 136, 136, 0.144);
+    }
+    .aboutHtml-container, 
+    .section-hero-card, 
+    .contactHtml-container,
+    .number-container
+    {
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+        text-align: center;
+
+    }
+    .work-experience-container{
+        flex-direction: column;
+       
+    }
+    .aboutHtml-container img, 
+    .section-hero-card img{
+    width: 100%;
+    
+    }
+    .aboutHtml-container-card, 
+    .section-hero-card,
+    .section-hero-card:nth-child(even){
+        flex-direction: column;
+    
+    }
+    .aboutHtml-container-card p, 
+    .section-hero-card p{
+    width: 100%;
+   
+    }
+    .contact-card:first-child{
+        text-align: center;
+    }
+    
+
+
+    
+}
+@media(max-width:760px){
+    :root{
+        --font-h1-40: 30px;
+    ---font-h2-32:26px;
+    ---font-h3-26:22px;
+    ---font-h4-24:20px;
+    ---font-h5-20:16px;
+    --font-15: 13px;
+    ---font-13:12px;
+    ---font-text-16: 13px; 
+    }
+    .logo img, .footer-logo img{
+        width: 150px;
+
+    }
+    #subject-container{
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+    } 
+    #hero-container{
+        height: auto;
+    }
+    .award-feature-container,
+    .service-body-container
+    {
+        grid-template-columns: 1fr;  
+    }
+    .portfolio-all-image,
+    .portfolio-img-card{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .portfolio-header, #hero-container{
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #subject-container, 
+    .award-feature-container,
+    .service-body-container,
+    .portfolio-all-image,
+    .portfolio-img-card{
+        grid-template-columns: 1fr;
+    }
+    .social-icon{
+        flex-direction: row;
+    }
+    .portfolio-Html-head{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .portfolio-Html-head p{
+        width: 100%;
+    }
+    #faq, .faq-container{
+        margin-top: 10px;
+
+    }
+    .hero-container-card{
+        
+        margin-top: 30px;
+    }
+    .anime-background li:nth-child(8), 
+    .anime-background li:nth-child(9), 
+    .anime-background li:nth-child(10), 
+    .anime-background li:nth-child(11),
+    .anime-background li:nth-child(12){
+        display: none;
+    }
+}
+@media (max-width:620px){
+    .hero-container-card:nth-child(2){
+        width: 100%;
+        margin-top: -50px;
+    }
+
+    
+    .anime-background li:nth-child(6), 
+    .anime-background li:nth-child(7),
+    .anime-background li:nth-child(8), 
+    .anime-background li:nth-child(9), 
+    .anime-background li:nth-child(10), 
+    .anime-background li:nth-child(11),
+    .anime-background li:nth-child(12){
+        display: none;
+    }
+    
+
 }

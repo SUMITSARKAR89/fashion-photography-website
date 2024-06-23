@@ -173,7 +173,7 @@ header{
     
 }
 .bg h1{
-    width: 600px;
+    width: 100%;
     text-align: center;
     align-items: center;
     top: 87%;
@@ -276,17 +276,19 @@ header{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-    flex-wrap: wrap;
+    align-items: center;
     margin: 6% 0;
+    max-width: 100%;
 }
 #subject-container .subject-card{
     padding: 2%;
     max-width: 100%;
+    margin: 0 auto;
     transition: 0.5s ease;
     
 }
 .subject-card:hover{
-    transform: scale(1.1) translateY(15px);
+    transform:  translateY(5px);
 }
 .subject-card img{
     width: 400px;
@@ -333,7 +335,7 @@ header{
 #hero-container{
     background-image: url(image/about.jpg);
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     position: absolute;
     background: linear-gradient(to bottom, rgba(0, 9, 15, 0) 50%, rgba(0, 1, 2, 0.473) 70%, rgba(8, 8, 8, 0.959) 100%) , url(image/about.jpg) center center fixed no-repeat;  
     display: flex;
@@ -403,7 +405,7 @@ button::before{
     width: 14%;
     height: 2px;
     display: block;
-    margin-top: 30px;
+    margin-top: 25px;
     background-color: var(---underline-text-color);
 }
 .btn{
@@ -421,7 +423,9 @@ button::before{
     justify-content: space-between;
     align-items: center;
     max-width: 100%;
+    gap: 30px;
     margin: 0 auto;
+    
 }
 .portfolio-header h2{
     text-transform: uppercase;
@@ -533,7 +537,7 @@ button::before{
     padding-left: 22px;
 }
 .comment-quota{
-    width: 98%;
+    width: 95%;
     margin-left: 70px;
     padding: 0 20px;
 }
@@ -840,12 +844,20 @@ button::before{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 15px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin:  0 auto;
     
 }
 .portfolio-all-image img{
     opacity: 1;
     transition: 0.4s;
     cursor: pointer;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 .portfolio-all-image img:hover{
     opacity: 0.7;
@@ -892,6 +904,21 @@ button::before{
 .section-hero-container{
     width: 100%;
     height: auto;
+    
+}
+.section-hero-card{
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    width: 100%;
+    margin: 3% auto;
+    padding: 30px 0;
+
+}
+.section-hero-card img{
+    width: 100%;
+    height: auto;
+    margin: 5% 0;
 }
 .section-hero-card:nth-child(even){
     display: flex;
@@ -899,14 +926,16 @@ button::before{
    
 
 }
+
 .number-container{
     margin-top: 6%;
     width: 100%;
     height: auto;
-    padding: 3px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 55px;
+    border: 1px solid rgba(128, 128, 128, 0.178);
+    
 }
 .number-card{
     margin: 4% 0;
@@ -933,9 +962,11 @@ button::before{
 }
 .contact-card{
     display: flex;
+    justify-content: center;
     flex-direction: column;
     margin: 2% 0;
     gap: 20px;
+    
 }
 .contact-card p{
     font-size: var(---font-text-15);
@@ -947,6 +978,7 @@ button::before{
 }
 .contact-card .address{
     width: 100%;
+    text-align: left;
     color: var(---text-color);
 
 }
@@ -1027,6 +1059,7 @@ textarea, input{
     background-color: transparent;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
     margin: 0 auto;
     margin-top: 100px;
