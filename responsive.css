@@ -313,8 +313,8 @@
 }
 @media(max-width:760px){
     :root{
-        --font-h1-40: 30px;
-    ---font-h2-32:26px;
+        --font-h1-40: 28px;
+    ---font-h2-32:24px;
     ---font-h3-26:22px;
     ---font-h4-24:20px;
     ---font-h5-20:16px;
@@ -373,12 +373,24 @@
         
         margin-top: 30px;
     }
+
+   
     .anime-background li:nth-child(8), 
     .anime-background li:nth-child(9), 
     .anime-background li:nth-child(10), 
     .anime-background li:nth-child(11),
     .anime-background li:nth-child(12){
         display: none;
+    }
+    .bg{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .bg h1{
+        width: 100%;
+        top: 80%;
+        left: 50%;
+        margin: 0 auto;
     }
 }
 @media (max-width:620px){
@@ -387,7 +399,8 @@
         margin-top: -50px;
     }
 
-    
+    .anime-background li:nth-child(4),
+    .anime-background li:nth-child(5),
     .anime-background li:nth-child(6), 
     .anime-background li:nth-child(7),
     .anime-background li:nth-child(8), 
@@ -396,6 +409,9 @@
     .anime-background li:nth-child(11),
     .anime-background li:nth-child(12){
         display: none;
+    }
+    .bg{
+        
     }
     
 
